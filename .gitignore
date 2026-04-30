@@ -2,3 +2,19 @@
 __pycache__/
 *.pyc
 .farshid/
+
+# Build artifacts
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# Test / runtime output
+test_output/
+
+# OS / editor cruft
+.DS_Store
+Thumbs.db
+*.swp
+.idea/
+

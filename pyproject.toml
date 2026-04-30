@@ -1,0 +1,51 @@
+[build-system]
+requires = ["hatchling>=1.27"]
+build-backend = "hatchling.build"
+
+[project]
+name = "farshid-mcp-imageProcessing"
+version = "0.2.0"
+description = "Local offline OpenCV-based image-processing MCP server: webcam capture, image transforms, edges, contours, face/QR detection, video, and ~40 tools."
+readme = "README.md"
+requires-python = ">=3.14"
+license = { text = "MIT" }
+authors = [
+  { name = "Farshid Pirahansiah" }
+]
+keywords = ["mcp", "model-context-protocol", "opencv", "computer-vision", "image-processing", "webcam"]
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Intended Audience :: Developers",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: Microsoft :: Windows :: Windows 11",
+  "Operating System :: MacOS :: MacOS X",
+  "Operating System :: POSIX :: Linux",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.14",
+  "Topic :: Multimedia :: Graphics",
+  "Topic :: Scientific/Engineering :: Image Processing",
+]
+dependencies = [
+  "mcp[cli]>=1.18.0",
+  "opencv-contrib-python>=4.11.0",
+  "numpy>=2.2.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/pirahansiah/farshid-mcp-imageProcessing"
+Repository = "https://github.com/pirahansiah/farshid-mcp-imageProcessing"
+Issues = "https://github.com/pirahansiah/farshid-mcp-imageProcessing/issues"
+
+[project.scripts]
+farshid-mcp-imageprocessing = "farshid_mcp_imageprocessing.server:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/farshid_mcp_imageprocessing"]
+
+[tool.hatch.build.targets.sdist]
+include = [
+  "src/farshid_mcp_imageprocessing",
+  "README.md",
+  "LICENSE",
+  "pyproject.toml",
+]

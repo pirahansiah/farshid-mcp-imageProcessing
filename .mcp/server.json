@@ -1,0 +1,21 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.pirahansiah/farshid-mcp-imageProcessing",
+  "title": "Farshid Image Processing MCP",
+  "description": "Local offline image-processing MCP server exposing ~40 OpenCV tools: webcam capture/record, image I/O, transforms, color, filtering, edges, thresholding, morphology, contours, feature matching, face/eye/QR detection, drawing, template matching, and video.",
+  "version": "0.2.0",
+  "repository": {
+    "url": "https://github.com/pirahansiah/farshid-mcp-imageProcessing",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "pypi",
+      "identifier": "farshid-mcp-imageProcessing",
+      "version": "0.2.0",
+      "transport": {
+        "type": "stdio"
+      }
+    }
+  ]
+}

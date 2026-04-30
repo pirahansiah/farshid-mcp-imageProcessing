@@ -1,0 +1,8 @@
+{
+  "servers": {
+    "imageProcessing": {
+      "type": "stdio",
+      "command": "farshid-mcp-imageprocessing"
+    }
+  }
+}
