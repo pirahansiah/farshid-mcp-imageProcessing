@@ -3,11 +3,11 @@ requires = ["hatchling>=1.27"]
 build-backend = "hatchling.build"
 
 [project]
-name = "farshid-mcp-imageProcessing"
-version = "0.2.0"
+name = "farshid-mcp-imageprocessing"
+version = "0.2.1"
 description = "Local offline OpenCV-based image-processing MCP server: webcam capture, image transforms, edges, contours, face/QR detection, video, and ~40 tools."
 readme = "README.md"
-requires-python = ">=3.14"
+requires-python = ">=3.10"
 license = { text = "MIT" }
 authors = [
   { name = "Farshid Pirahansiah" }
@@ -21,14 +21,18 @@ classifiers = [
   "Operating System :: MacOS :: MacOS X",
   "Operating System :: POSIX :: Linux",
   "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: 3.13",
   "Programming Language :: Python :: 3.14",
   "Topic :: Multimedia :: Graphics",
   "Topic :: Scientific/Engineering :: Image Processing",
 ]
 dependencies = [
   "mcp[cli]>=1.18.0",
-  "opencv-contrib-python>=4.11.0",
-  "numpy>=2.2.0",
+  "opencv-contrib-python>=4.10.0",
+  "numpy>=1.26",
 ]
 
 [project.urls]
