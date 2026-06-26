@@ -17,4 +17,6 @@ test_output/
 Thumbs.db
 *.swp
 .idea/
+._*
+._*
 
